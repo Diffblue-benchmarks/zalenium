@@ -1,0 +1,228 @@
+# Tested on Deeptest release 1.10.0
+cbmcArguments:
+  cover-function-only: false
+  depth: false
+  do-not-test-methods-with-access: [ private ]
+  java-generate-no-comments: true
+  no-trivial-tests: true
+  string-non-empty: true
+  string-printable: true
+units:
+  - target:
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/container/kubernetes/KubernetesContainerClient.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/container/kubernetes/KubernetesContainerClient.java
+    # Child of KubernetesContainerClient.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/container/ContainerClient.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/container/ContainerClient.java
+    # Child of KubernetesContainerClient.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/container/ContainerClientRegistration.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/container/ContainerClientRegistration.java
+    # Child of KubernetesContainerClient.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/container/ContainerCreationStatus.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/container/ContainerCreationStatus.java
+    # Child of KubernetesContainerClient.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/util/Environment.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/util/Environment.java
+  - target:
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/proxy/BrowserStackRemoteProxy.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/proxy/BrowserStackRemoteProxy.java
+    # Child of BrowserStackRemoteProxy.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/dashboard/TestInformation.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/dashboard/TestInformation.java
+  - target:
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/util/CommonProxyUtilities.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/util/CommonProxyUtilities.java
+  - target:
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/container/DockerContainerClient.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/container/DockerContainerClient.java
+    # Child of DockerContainerClient.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/proxy/DockeredSeleniumStarter.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/proxy/DockeredSeleniumStarter.java
+    # Child of DockerContainerClient.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/util/GoogleAnalyticsApi.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/util/GoogleAnalyticsApi.java
+  - target:
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/proxy/AutoStartProxySet.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/proxy/AutoStartProxySet.java
+  - target:
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/dashboard/DashboardCollection.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/dashboard/DashboardCollection.java
+    # Child of DashboardCollection.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/dashboard/remote/RemoteDashboard.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/dashboard/remote/RemoteDashboard.java
+    # Child of DashboardCollection.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/dashboard/remote/RemoteDriverLogDashboard.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/dashboard/remote/RemoteDriverLogDashboard.java
+    # Child of DashboardCollection.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/dashboard/remote/RemoteSeleniumLogDashboard.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/dashboard/remote/RemoteSeleniumLogDashboard.java
+    # Child of DashboardCollection.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/dashboard/remote/RemoteVideoDashboard.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/dashboard/remote/RemoteVideoDashboard.java
+  - target:
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/proxy/DockerSeleniumRemoteProxy.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/proxy/DockerSeleniumRemoteProxy.java
+    # Child of DockerSeleniumRemoteProxy.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/container/ContainerFactory.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/container/ContainerFactory.java
+    # Child of DockerSeleniumRemoteProxy.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/dashboard/DashboardCollection.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/dashboard/DashboardCollection.java
+    # Child of DockerSeleniumRemoteProxy.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/matcher/DockerSeleniumCapabilityMatcher.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/matcher/DockerSeleniumCapabilityMatcher.java
+    # Child of DockerSeleniumRemoteProxy.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/matcher/ZaleniumCapabilityType.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/matcher/ZaleniumCapabilityType.java
+    # Child of DockerSeleniumRemoteProxy.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/util/CommonProxyUtilities.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/util/CommonProxyUtilities.java
+  - target:
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/proxy/CloudTestingRemoteProxy.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/proxy/CloudTestingRemoteProxy.java
+    # Child of CloudTestingRemoteProxy.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/matcher/ZaleniumCapabilityMatcher.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/matcher/ZaleniumCapabilityMatcher.java
+    # Child of CloudTestingRemoteProxy.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/servlet/renderer/CloudProxyHtmlRenderer.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/servlet/renderer/CloudProxyHtmlRenderer.java
+  - target:
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/dashboard/Dashboard.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/dashboard/Dashboard.java
+  - target:
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/proxy/TestingBotRemoteProxy.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/proxy/TestingBotRemoteProxy.java
+  - target:
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/util/GoogleAnalyticsApi.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/util/GoogleAnalyticsApi.java
+  - target:
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/registry/ZaleniumRegistry.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/registry/ZaleniumRegistry.java
+    # Child of ZaleniumRegistry.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/prometheus/ContainerStatusCollectorExports.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/prometheus/ContainerStatusCollectorExports.java
+    # Child of ZaleniumRegistry.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/prometheus/TestSessionCollectorExports.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/prometheus/TestSessionCollectorExports.java
+    # Child of ZaleniumRegistry.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/proxy/AutoStartProxySet.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/proxy/AutoStartProxySet.java
+    # Child of ZaleniumRegistry.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/proxy/DockerSeleniumRemoteProxy.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/proxy/DockerSeleniumRemoteProxy.java
+    # Child of ZaleniumRegistry.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/util/ZaleniumConfiguration.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/util/ZaleniumConfiguration.java
+  - target:
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/matcher/DockerSeleniumCapabilityMatcher.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/matcher/DockerSeleniumCapabilityMatcher.java
+  - target:
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/util/Environment.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/util/Environment.java
+  - target:
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/proxy/SessionRequestFilter.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/proxy/SessionRequestFilter.java
+  - target:
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/container/ContainerFactory.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/container/ContainerFactory.java
+    # Child of ContainerFactory.class
+    - dir: target/classes
+      file: de/zalando/ep/zalenium/container/kubernetes/KubernetesContainerClient.class
+      sourceDir: src/main/java
+      sourceFile: de/zalando/ep/zalenium/container/kubernetes/KubernetesContainerClient.java
+phases:
+-
+  timeout: 300
+  cbmcArguments:
+    java-assume-inputs-non-null: true
+    max-nondet-array-length: 10
+    unwind: 1
+-
+  timeout: 300
+  cbmcArguments:
+    max-nondet-array-length: 20
+    unwind: 2
+-
+  timeout: 300
+  cbmcArguments:
+    max-nondet-array-length: 30
+    max-nondet-string-length: 10
+    unwind: 3
